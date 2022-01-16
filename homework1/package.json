@@ -1,0 +1,45 @@
+{
+  "name": "homework1",
+  "version": "1.0.0",
+  "description": "homework 1 bulding js development environment from scratch, nika keshelava",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node scripts/server.js",
+    "localtunnel": "lt --port 3000",
+    "share": "npm-run-all --parallel start localtunnel",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nika1keshelava/OmediaAngularBootcamp.git"
+  },
+  "author": "nika keshelava",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nika1keshelava/OmediaAngularBootcamp/issues"
+  },
+  "homepage": "https://github.com/nika1keshelava/OmediaAngularBootcamp#readme",
+  "dependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.7",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.8",
+    "babel-loader": "^8.2.3",
+    "eslint": "^8.6.0",
+    "express": "^4.17.2",
+    "html-webpack-plugin": "^5.5.0",
+    "localtunnel": "^2.0.2",
+    "lodash": "^4.17.21",
+    "prettier": "^2.5.1",
+    "webpack-dev-middleware": "^5.3.0"
+  },
+  "build": "webpack --config webpack.config.js",
+  "format:all": "prettier --write \"src/**/*.js\"",
+  "lint": "eslint src",
+  "devDependencies": {
+    "web": "0.0.2",
+    "webpack": "^5.66.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
